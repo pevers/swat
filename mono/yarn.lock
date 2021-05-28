@@ -1139,7 +1139,7 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@prisma/client@^2.23.0":
+"@prisma/client@2.23.0":
   version "2.23.0"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.23.0.tgz#4bf16ab19b140873ba79bd159da86842b1746e0a"
   integrity sha512-xsHdo3+wIH0hJVGfKHYTEKtifStjKH0b5t8t7hV32Fypq6+3uxhAi3F25yxuI4XSHXg21nb7Ha82lNwU/0TERA==
@@ -5923,7 +5923,7 @@ printj@~1.1.0:
   resolved "https://registry.yarnpkg.com/printj/-/printj-1.1.2.tgz#d90deb2975a8b9f600fb3a1c94e3f4c53c78a222"
   integrity sha512-zA2SmoLaxZyArQTOPj5LXecR+RagfPSU5Kw1qP+jkWeNlrq+eJZyY2oS68SU1Z/7/myXM4lo9716laOFAVStCQ==
 
-prisma@^2.23.0:
+prisma@2.23.0:
   version "2.23.0"
   resolved "https://registry.yarnpkg.com/prisma/-/prisma-2.23.0.tgz#6464cca0e085ed23b1815013a67c868eff07a7d2"
   integrity sha512-3c/lmDy8nsPcEsfCufvCTJUEuwmAcTPbeGg9fL1qjlvS314duLUA/k2nm3n1rq4ImKqzeC5uaKfvI2IoAfwrJA==
@@ -6430,11 +6430,6 @@ serialize-javascript@^5.0.1:
   integrity sha512-SaaNal9imEO737H2c05Og0/8LUXG7EnsZyMa8MzkmuHoELfT6txuj0cMqRj6zfPKnmQ1yasR4PCJc8x+M4JSPA==
   dependencies:
     randombytes "^2.1.0"
-
-serverless-plugin-scripts@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-scripts/-/serverless-plugin-scripts-1.0.2.tgz#21808c3cfd0a1a84e48c0660b0f6f370b5665486"
-  integrity sha1-IYCMPP0KGoTkjAZgsPbzcLVmVIY=
 
 serverless-webpack@^5.5.0:
   version "5.5.0"

@@ -12,8 +12,8 @@ custom:
     packagerOptions:
       scripts:
         - npx prisma generate
-    includeModules:
-      nodeModulesRelativeDir: '../../../'
+    includeModules: true
+      # nodeModulesRelativeDir: '../../'
       # forceInclude:
       #   - "@prisma/client"
       #   - ".bin"
