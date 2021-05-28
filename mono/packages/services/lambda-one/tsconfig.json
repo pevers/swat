@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "baseUrl": "./",
+    "sourceRoot": "./src",
+    "target": "es2020",
+    "outDir": ".build",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": ["es2020"],
+    "rootDir": "./src",
+    "resolveJsonModule": true
+  }
+}
