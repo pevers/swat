@@ -1,5 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
+export type IsTypescript = true;
+
 export const hello = (event) => {
   const db = new PrismaClient();
   db.$disconnect();

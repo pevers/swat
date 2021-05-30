@@ -17,7 +17,8 @@
     "clean-output": "rm -fr output && rm -fr */**/output",
     "clean-dist": "rm -fr packages/*/**/dist && rm -fr packages/*/**/.serverless",
     "clean-deps": "rm -fr node_modules && rm -fr packages/*/**/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
-    "clean-logs": "rm -f *.log && rm -fr */**/*.log"
+    "clean-logs": "rm -f *.log && rm -fr */**/*.log",
+    "prepare": "husky install"
   },
   "workspaces": {
     "packages": [
@@ -48,6 +49,8 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
     "babel-loader": "^8.2.2",
     "cache-loader": "^4.1.0",
     "copy-webpack-plugin": "^9.0.0",
