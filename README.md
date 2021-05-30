@@ -1,6 +1,6 @@
 # Serverless Webpack Monorepo Typescript Starter
 
-Heavily inspired on this repo: https://github.com/tommedema/serverless-mono-example . This example showcases a monorepo setup for Serverless applications in Typescript using Yarn Workspaces and Webpack. The Lambda integrates with [Prisma](https://github.com/prisma/prisma) to demonstrate forcefully including packages that cannot be bundled by Webpack.
+Heavily inspired on this repo: https://github.com/tommedema/serverless-mono-example . This example showcases a monorepo setup for Serverless applications in Typescript using Yarn Workspaces and Webpack. The Lambda integrates with [Prisma](https://github.com/prisma/prisma) to demonstrate forcefully including packages that cannot be bundled by Webpack. It works by preventing these dependencies to be hoisted to the root folder, by adding them to Yarn's `nohoist` (see `package.json`).
 
 ## Stack
 
@@ -42,3 +42,7 @@ Deploy all Lambda's from the root folder or individually by navigating to a pack
 ```sh
 yarn deploy
 ```
+
+### Exclude more dependencies for bundling
+
+Prisma generates Typescript definitions and a Prisma engine. This Prisma engine is a direct interface to the database. These files cannot be bundled by Webpack and should therefore be excluded. Other dependencies can be added or removed by adding them to the `nohoist` option in the `package.json` file.
