@@ -1,14 +1,17 @@
 {
-  "name": "lambda-one",
+  "name": "id-lambda",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "author": "Peter Evers",
   "scripts": {
     "build": "tsc -p .",
-    "generate": "npx prisma generate"
+    "generate": "npx prisma generate --schema ../../db/schema.prisma",
+    "deploy": "sls deploy",
+    "remove": "sls remove"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.76",
     "prisma": "2.23.0",
     "serverless": "^2.43.1",
     "serverless-webpack": "^5.5.0",

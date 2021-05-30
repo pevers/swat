@@ -40,6 +40,6 @@ module.exports = {
     ]
   },
   plugins: [new ForkTsCheckerWebpackPlugin(), new CopyWebpackPlugin({
-    patterns: ['prisma/schema.prisma']
+    patterns: ['../../db/schema.prisma']
   })]
 };

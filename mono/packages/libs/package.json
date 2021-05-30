@@ -9,13 +9,13 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "build": "tsc -p ."
+    "build": "tsc -b ."
   },
   "dependencies": {
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "@prisma/client": "^2.23.0"
   },
   "devDependencies": {
-    "@types/uuid": "^8.3.0",
-    "jest": "^27.0.1"
+    "@types/uuid": "^8.3.0"
   }
 }
