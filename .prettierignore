@@ -1,0 +1,6 @@
+**/*/migrations/
+**/*/dist/
+**/*/build/
+**/*/.serverless/
+**/*/coverage
+**/*/webpackCache
