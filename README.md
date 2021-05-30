@@ -9,6 +9,7 @@ Heavily inspired on this repo: https://github.com/tommedema/serverless-mono-exam
 - Yarn Workspaces
 - Serverless Framework
 - Webpack
+- Prisma (database)
 
 ## Install & Build
 
