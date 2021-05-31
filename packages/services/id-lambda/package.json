@@ -8,18 +8,14 @@
     "build": "tsc -p .",
     "generate": "npx prisma generate --schema ../../db/schema.prisma",
     "deploy": "sls deploy",
-    "remove": "sls remove"
+    "rm": "sls remove"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.76",
-    "prisma": "2.23.0",
-    "serverless": "^2.43.1",
-    "serverless-webpack": "^5.5.0",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.0",
-    "webpack-node-externals": "^3.0.0"
+    "prisma": "2.23.0"
   },
   "dependencies": {
-    "@prisma/client": "2.23.0"
+    "@prisma/client": "2.23.0",
+    "@pevers/libs": "1.0.0"
   }
 }

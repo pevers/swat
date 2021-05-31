@@ -10,6 +10,7 @@
     "build": "tsc -b ./packages",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --stream",
+    "rm": "lerna run rm --stream",
     "lint": "eslint . --ext js,ts --cache --fix",
     "prettier": "prettier --write .",
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
