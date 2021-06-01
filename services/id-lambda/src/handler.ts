@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client';
+import { generateRandomId } from '../../../common/libs/src/index';
 import {
   Context,
   APIGatewayProxyEvent,
   APIGatewayProxyResult,
 } from 'aws-lambda';
-import { generateRandomId } from '@pevers/libs';
 
 export const handler = async (
   event: APIGatewayProxyEvent,

@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc -b ./packages",
+    "build": "tsc -b ./services",
     "test": "lerna run test --",
     "deploy": "lerna run deploy --stream",
     "rm": "lerna run rm --stream",
@@ -16,15 +16,14 @@
     "clean": "yarn run clean-dist && yarn run clean-output && yarn run clean-logs",
     "clean-incl-deps": "yarn run clean && yarn run clean-deps",
     "clean-output": "rm -fr output && rm -fr */**/output",
-    "clean-dist": "rm -fr packages/*/**/dist && rm -fr packages/*/**/.serverless && rm -fr packages/*/**/.webpackCache",
-    "clean-deps": "rm -fr node_modules && rm -fr packages/*/**/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
+    "clean-dist": "rm -fr services/*/**/dist && rm -fr services/*/**/.serverless && rm -fr services/*/**/.webpackCache",
+    "clean-deps": "rm -fr node_modules && rm -fr services/*/**/node_modules && rm -f yarn.lock && rm -fr */**/yarn.lock",
     "clean-logs": "rm -f *.log && rm -fr */**/*.log",
     "prepare": "husky install"
   },
   "workspaces": {
     "packages": [
-      "packages/*",
-      "packages/services/*"
+      "services/*"
     ],
     "nohoist": [
       "**/@prisma/client"

@@ -6,7 +6,7 @@
   "author": "Peter Evers",
   "scripts": {
     "build": "tsc -p .",
-    "generate": "npx prisma generate --schema ../../db/schema.prisma",
+    "generate": "npx prisma generate --schema ../../common/db/prisma/schema.prisma",
     "deploy": "sls deploy",
     "rm": "sls remove"
   },
@@ -15,7 +15,6 @@
     "prisma": "2.23.0"
   },
   "dependencies": {
-    "@prisma/client": "2.23.0",
-    "@pevers/libs": "1.0.0"
+    "@prisma/client": "2.23.0"
   }
 }

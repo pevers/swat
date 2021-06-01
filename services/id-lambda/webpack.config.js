@@ -34,7 +34,12 @@ module.exports = {
               cacheDirectory: path.resolve('.webpackCache'),
             },
           },
-          'babel-loader',
+          {
+            loader: 'babel-loader',
+            options: {
+              rootMode: 'upward',
+            },
+          },
         ],
       },
     ],
@@ -42,7 +47,7 @@ module.exports = {
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
     new CopyWebpackPlugin({
-      patterns: ['../../db/schema.prisma'],
+      patterns: ['../../common/db/prisma/schema.prisma'],
     }),
   ],
 };

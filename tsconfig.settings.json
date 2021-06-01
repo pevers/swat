@@ -6,11 +6,8 @@
     "moduleResolution": "node",
 
     "rootDir": ".",
-    "baseUrl": "./packages",
-    "paths": {
-      "@pevers/*": ["./*/src"]
-    },
-    "typeRoots": ["./node_modules/@types", "./packages/types"],
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
 
     "composite": true,
     "declaration": true,
