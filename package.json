@@ -23,7 +23,8 @@
   },
   "workspaces": {
     "packages": [
-      "services/*"
+      "services/*",
+      "common/*"
     ],
     "nohoist": [
       "**/@prisma/client"
