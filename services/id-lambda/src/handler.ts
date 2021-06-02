@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { generateRandomId } from '../../../common/libs/src/index';
+import { generateRandomId } from '@pevers/libs';
 import {
   Context,
   APIGatewayProxyEvent,

@@ -6,7 +6,10 @@
     "moduleResolution": "node",
 
     "rootDir": ".",
-    "baseUrl": ".",
+    "baseUrl": "./common",
+    "paths": {
+      "@pevers/*": ["./*/src"]
+    },
     "typeRoots": ["./node_modules/@types"],
 
     "composite": true,

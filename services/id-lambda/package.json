@@ -15,6 +15,7 @@
     "prisma": "2.23.0"
   },
   "dependencies": {
-    "@prisma/client": "2.23.0"
+    "@prisma/client": "2.23.0",
+    "@pevers/libs": "1.0.0"
   }
 }

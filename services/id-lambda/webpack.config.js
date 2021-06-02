@@ -26,7 +26,7 @@ module.exports = {
       {
         // Include ts, tsx, js, and jsx files.
         test: /\.(ts|js)x?$/,
-        exclude: /node_modules/,
+        exclude: /node_modules|__tests__/,
         use: [
           {
             loader: 'cache-loader',
@@ -35,9 +35,10 @@ module.exports = {
             },
           },
           {
-            loader: 'babel-loader',
+            loader: 'ts-loader',
             options: {
-              rootMode: 'upward',
+              transpileOnly: false,
+              projectReferences: true,
             },
           },
         ],
